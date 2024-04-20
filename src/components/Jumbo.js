@@ -1,11 +1,16 @@
 const Jumbo = () => {
   return (
-    <div className="h-[500px] bg-slate-300 overflow-hidden">
+    <div className="h-[500px] bg-slate-200 overflow-hidden">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
       <div className="flex sm:w-lg md:max-w-screen-lg mx-auto justify-between">
         <div className="mt-10">
-          <div className="font-bold text-6xl leading-snug">
-            Hi there,<br></br> I am{" "}
-            <span className="text-orange-500">Pooja</span>
+          <div className="font-bold text-7xl leading-tight">
+            <span className="text-5xl">Hi there,</span><br></br> I am{" "}
+            <span className="text-orange-600">Pooja</span>
           </div>
           <div className="text-2xl mt-4">A front-end developer</div>
           <a

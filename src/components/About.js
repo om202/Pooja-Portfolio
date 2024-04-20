@@ -4,10 +4,10 @@ const About = () => {
   const hobbies = ["Coding", "Music", "Hiking", "Travel", "Cooking"];
   return (
     <BigWrapper>
-      <div className="flex">
+      <div className="flex" id="about_page">
         <img src="pooja2.png" alt="pooja2" className="max-h-[500px]" />
         <div className="ml-8">
-          <h1 className="font-bold text-3xl mb-4">About</h1>
+          <h1 className="font-bold text-3xl mb-4 text-violet-500">About</h1>
           <div className="text-gray-800">
             <p>
               It's a pleasure to meet you! My name is Pooja Kumari Sah, and I am

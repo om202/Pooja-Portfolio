@@ -19,14 +19,32 @@ const Projects = () => {
       technologies: ["ReactJS", "Tailwind CSS", "HTML5", "Javascript"],
       github: "/",
     },
+    {
+      title: "Business Model: Helps add business record",
+      id: "pooja_portfolio",
+      description:
+        "I made this website just to learn CRUD operations. User can enter business name and information and click submit to add the business on their record..",
+      technologies: ["ReactJS", "Tailwind CSS", "HTML5", "Javascript"],
+      github: "/",
+    },
+    {
+      title: "Instagram Clone: A pure ReactJS Instagram Clone",
+      id: "pooja_portfolio",
+      description:
+        "I made this website to to learn UI development with ReactJS.",
+      technologies: ["ReactJS", "Tailwind CSS", "HTML5", "Javascript"],
+      github: "/",
+    },
   ];
   return (
     <BigWrapper>
-      <h1 className="text-2xl font-bold text-violet-500 mb-4">Projects</h1>
-      <div className="flex gap-8">
-        {projects.map((item) => {
-          return <ProductCard data={item} key={item.id} />;
-        })}
+      <div id="projects_page">
+        <h1 className="text-2xl font-bold text-violet-500 mb-4">Projects</h1>
+        <div className="flex gap-8 flex-wrap">
+          {projects.map((item) => {
+            return <ProductCard data={item} key={item.id} />;
+          })}
+        </div>
       </div>
     </BigWrapper>
   );
