@@ -14,7 +14,7 @@ const Jumbo = () => {
           </div>
           <div className="text-2xl mt-4">A front-end developer</div>
           <a
-            href="/"
+            href="https://github.com/poojasah77"
             className="flex px-4 py-2 bg-violet-500 mt-8 text-xl w-fit text-white rounded-md shadow-md"
           >
             <span className="mr-2">My Work</span>
