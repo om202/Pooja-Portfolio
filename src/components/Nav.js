@@ -67,6 +67,9 @@ const Nav = () => {
               <a href="#projects_page">Projects</a>
             </li>
             <li>
+              <a href="#education_page">Education</a>
+            </li>
+            <li>
               <a href="#contacts_page">Contact</a>
             </li>
           </ul>
@@ -105,6 +108,14 @@ const Nav = () => {
                 className="block py-1 px-2 rounded hover:bg-violet-500 hover:text-white"
               >
                 Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#education_page"
+                className="block py-1 px-2 rounded hover:bg-violet-500 hover:text-white"
+              >
+                Education
               </a>
             </li>
             <li>

@@ -42,7 +42,7 @@ export const Education = () => {
 function EducationContainer({ data }) {
   const { institute, course, website, address, id } = data;
   return (
-    <div>
+    <div id="education_page">
       <div className="flex flex-col p-4 shadow-md rounded-md border-2">
         <div className="w-full h-[200px] flex items-center justify-center overflow-hidden">
           <img
