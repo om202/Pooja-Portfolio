@@ -1,13 +1,8 @@
 const Jumbo = () => {
   return (
-    <div className="h-[500px] bg-slate-200 overflow-hidden">
-      <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div>
-      <div className="flex sm:w-lg md:max-w-screen-lg mx-auto justify-between">
-        <div className="mt-10">
+    <div className="md:h-[500px] bg-slate-200 overflow-hidden p-4">
+      <div className="flex flex-col sm:flex-row sm:w-lg md:max-w-screen-lg mx-auto justify-between p-4 md:p-0">
+        <div className="mt-10 text-center sm:text-left">
           <div className="font-bold text-7xl leading-tight">
             <span className="text-5xl">Hi there,</span><br></br> I am{" "}
             <span className="text-orange-600">Pooja</span>
@@ -15,7 +10,7 @@ const Jumbo = () => {
           <div className="text-2xl mt-4">A front-end developer</div>
           <a
             href="https://github.com/poojasah77"
-            className="flex px-4 py-2 bg-violet-500 mt-8 text-xl w-fit text-white rounded-md shadow-md"
+            className="flex px-4 py-2 bg-violet-500 mt-8 text-xl w-fit text-white rounded-md shadow-md mx-auto sm:mx-0"
           >
             <span className="mr-2">My Work</span>
             <svg
@@ -35,7 +30,7 @@ const Jumbo = () => {
             </svg>
           </a>
         </div>
-        <img src="poojabg.png" alt="" className="pt-3 max-h-[700px]" />
+        <img src="poojabg.png" alt="" className="pt-3 max-h-[700px] mx-auto sm:mx-0" />
       </div>
     </div>
   );
