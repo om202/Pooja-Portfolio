@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { Education } from "./components/Education";
 import Footer from "./components/Footer";
 import Jumbo from "./components/Jumbo";
 import Nav from './components/Nav';
@@ -15,6 +16,7 @@ function App() {
       <About/>
       <Skills />
       <Projects />
+      <Education/>
       <Contact/>
       <Footer/>
     </div>

@@ -11,8 +11,8 @@ const ContactCard = ({ children }) => {
 const Contact = () => {
   return (
     <BigWrapper>
-      <div className="flex gap-4" id="contacts_page">
-        <div className="w-1/2">
+      <div className="flex flex-col sm:flex-row gap-4" id="contacts_page">
+        <div className="w-full sm:w-1/2 lg:w-1/3">
           <h1 className="font-bold text-2xl text-violet-500">Get In Touch</h1>
           <div className="mt-4">
             I will be happy to meet you in person or contact me via any of your
@@ -100,8 +100,8 @@ const Contact = () => {
               </ContactCard>
             </a>
           </div>
-        </div>
-        <img src="contact.webp" className="w-1/2 h-auto" alt="contact page" />
+          </div>
+          <img src="contact.webp" className="w-full h-auto sm:w-1/2 lg:w-2/3 lg:h-[400px] object-cover" alt="contact page" />
       </div>
     </BigWrapper>
   );
