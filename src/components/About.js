@@ -4,9 +4,9 @@ const About = () => {
   const hobbies = ["Coding", "Music", "Hiking", "Travel", "Cooking"];
   return (
     <BigWrapper>
-      <div className="flex" id="about_page">
-        <img src="pooja2.png" alt="pooja2" className="max-h-[500px]" />
-        <div className="ml-8">
+      <div className="flex flex-col sm:flex-row gap-4" id="about_page">
+        <img src="pooja2.png" alt="pooja2" className="w-full sm:w-1/2 lg:w-1/3 h-auto object-cover" />
+        <div className="mt-4 sm:mt-0 sm:w-1/2 lg:w-2/3">
           <h1 className="font-bold text-3xl mb-4 text-violet-500">About</h1>
           <div className="text-gray-800">
             <p>
@@ -27,7 +27,7 @@ const About = () => {
           </div>
           <div className="mt-4">
             <h1 className="text-violet-500 font-bold mb-2">Hobbies</h1>
-            <ul className="flex gap-2">
+            <ul className="flex gap-2 flex-wrap">
               {hobbies.map((item) => {
                 return <li className="px-2 bg-slate-200 rounded-md">{item}</li>;
               })}
