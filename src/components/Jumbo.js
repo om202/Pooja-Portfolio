@@ -17,7 +17,7 @@ const Jumbo = () => {
               class="w-7 h-7"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
+            width="24"
               height="24"
               fill="currentColor"
               viewBox="0 0 24 24"

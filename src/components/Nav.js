@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 const Nav = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="">
-      <nav className="py-5 flex justify-between sm:w-lg md:max-w-screen-lg mx-auto">
+      <nav className="py-5 flex justify-between sm:w-lg md:max-w-screen-lg mx-auto px-5 lg:px-0">
         {/* logo */}
         <div className="flex gap-2 text-lg font-bold">
           <svg
@@ -26,7 +34,25 @@ const Nav = () => {
         </div>
 
         {/* nav bar */}
-        <div className="inline-block">
+        <div className="inline-block md:hidden">
+          <span onClick={toggleMenu} className="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </span>
+        </div>
+        <div className="hidden md:inline-block">
           <ul className="flex gap-5 text-violet-500 font-medium">
             <li>
               <a href="/">Home</a>
@@ -46,6 +72,27 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
+      {showMenu && (
+        <div className="block md:hidden">
+          <ul className="flex flex-col gap-5 text-violet-500 font-medium">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#about_page">About</a>
+            </li>
+            <li>
+              <a href="#technologies_page">Technologies</a>
+            </li>
+            <li>
+              <a href="#projects_page">Projects</a>
+            </li>
+            <li>
+              <a href="#contacts_page">Contact</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
