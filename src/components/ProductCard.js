@@ -1,8 +1,10 @@
 const ProductCard = ({ data }) => {
   const { title, id, description, technologies, github } = data;
   return (
-    <div className="flex flex-col max-w-[464px] p-4 shadow-md rounded-md border-2 lg:w-1/2">
-      <img src={id + ".png"} alt={id} />
+    <div className="flex flex-col w-full sm:w-full md:w-full lg:w-[464px] p-4 shadow-md rounded-md border-2">
+      <div className="w-full h-[200px] flex items-center justify-center overflow-hidden">
+        <img className="object-cover object-center" src={id + ".png"} alt={id} />
+      </div>
       <a href={github}>
         <div className="flex items-center mt-2 gap-1">
           <svg

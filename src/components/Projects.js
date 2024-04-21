@@ -40,7 +40,7 @@ const Projects = () => {
     <BigWrapper>
       <div id="projects_page">
         <h1 className="text-2xl font-bold text-violet-500 mb-4">Projects</h1>
-        <div className="flex gap-8 flex-wrap">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((item) => {
             return <ProductCard data={item} key={item.id} />;
           })}
